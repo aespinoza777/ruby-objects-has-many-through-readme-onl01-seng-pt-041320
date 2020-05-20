@@ -23,7 +23,7 @@ end
 
 def waiters
   # binding.pry
-  Meal.all.select {|meal| meal.waiter == self}
+  self.meals.map {|meal| meal.waiter}
 end
 
 end
