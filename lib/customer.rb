@@ -12,7 +12,10 @@ def self.all
 @@all
 end
 def new_meals(waiter,total,tip)
-  Meal.new(self) 
+  Meal.new(waiter, self, total, tip)
+end
+
+ 
 def meals
   Meal.all.select {|meal|meal.customer == self}
 end
