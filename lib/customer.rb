@@ -13,7 +13,7 @@ def self.all
 end
 
 def meals
-  meal = meal.new {|meal|meal.customer == self}
+  {|meal|meal.customer == self}
 end
 
 def waiters
