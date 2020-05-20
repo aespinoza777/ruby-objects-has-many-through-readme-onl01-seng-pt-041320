@@ -21,7 +21,7 @@ def meals
 end
 
 def waiters
-  self.all.select {|meal| meal.waiter == self}
+  Customer.all.select {|meal| meal.waiter == self}
 end
 
 end
