@@ -22,8 +22,8 @@ def meals
 end
 
 def waiters
-  binding.pry
-  Customer.all.select {|meal| meal.waiter == self}
+  # binding.pry
+  Meal.all.select {|meal| meal.waiter == self}
 end
 
 end
