@@ -11,7 +11,7 @@ end
 def self.all
 @@all
 end
-
+def new_meals()
 def meals
   Meal.all.select {|meal|meal.customer == self}
 end
