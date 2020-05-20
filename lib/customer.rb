@@ -12,7 +12,7 @@ def self.all
 @@all
 end
 
-def new_meals
+def meals
   meal = meal.new {|meal|meal.customer == self}
 end
 
